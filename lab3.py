@@ -42,9 +42,13 @@ def main():
     y0 = HEIGHT//2 
 
     #+/- 45degree random
-    if (rand.random() < .5): 
+    randInit = rand.random()
+    if (randInit < (1/3)): 
         vx0 = -VELOCITY
         vy0 = VELOCITY
+    elif ((randInit >= (1/3)) & (randInit < (2/3))): 
+        vx0 = -VELOCITY
+        vy0 = 0
     else: 
         vx0 = -VELOCITY
         vy0 = -VELOCITY
@@ -57,6 +61,9 @@ def main():
     # define a variable to control the main loop
     running = True
     clock = pygame.time.Clock()
+
+    #delay so i can actually record it. 3 sec delay
+    #pygame.time.wait(3000)
 
     # main loop
     while running:
