@@ -43,15 +43,8 @@ def main():
 
     #+/- 45degree random
     randInit = rand.random()
-    if (randInit < (1/3)): 
-        vx0 = -VELOCITY
-        vy0 = VELOCITY
-    elif ((randInit >= (1/3)) & (randInit < (2/3))): 
-        vx0 = -VELOCITY
-        vy0 = 0
-    else: 
-        vx0 = -VELOCITY
-        vy0 = -VELOCITY
+    vx0 = -VELOCITY
+    vy0 = rand.randint(-VELOCITY,VELOCITY)
 
     b0 = Ball(x0, y0, vx0, vy0, screen, fgcolor, bgcolor, BORDER, HEIGHT, WIDTH)
     b0.show(fgcolor)
