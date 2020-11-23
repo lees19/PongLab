@@ -1,5 +1,6 @@
 import pygame
 
+
 def main(): 
     pygame.init() 
     pygame.display.set_caption("my pong")
