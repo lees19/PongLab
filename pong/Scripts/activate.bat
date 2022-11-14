@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\lees19\Desktop\homework\DataScience\pong
+set VIRTUAL_ENV=C:\Users\lees19\Documents\GitHub\PongLab\pong
 
 if not defined PROMPT set PROMPT=$P$G
 
